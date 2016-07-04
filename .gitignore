@@ -12,6 +12,7 @@ coverage
 .lock-wscript
 build/Release
 node_modules
+assets/components
 jspm_modules
 .npm
 .node_repl_history
@@ -63,4 +64,5 @@ Temporary Items
 !/modules/README.md**
 
 # Ignore changes to the custom css files.
-/css/custom.css
+# css/custom.css
+css/main.css

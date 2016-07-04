@@ -18,7 +18,7 @@ Module.register("calendar",{
 		displayRepeatingCountTitle: false,
 		defaultRepeatingCountTitle: '',
 		maxTitleLength: 25,
-		fetchInterval: 5 * 60 * 1000, // Update every 5 minutes.
+		fetchInterval: 5 * 60 * 1000,  // Update every 5 minutes.
 		animationSpeed: 2000,
 		fade: true,
 		urgency: 7,
