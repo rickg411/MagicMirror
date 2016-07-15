@@ -8,12 +8,12 @@
  */
 
 var defaults = {
-	port: 8080,
+	port: 9001,
 
 	language: "en",
 	timeFormat: 24,
 	units: "metric",
-	
+
 	modules: [
 		{
 			module: "helloworld",

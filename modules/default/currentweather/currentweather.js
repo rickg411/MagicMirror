@@ -98,19 +98,19 @@ Module.register("currentweather",{
 
 		if (this.config.appid === "") {
 			wrapper.innerHTML = "Please set the correct openweather <i>appid</i> in the config for module: " + this.name + ".";
-			wrapper.className = "dimmed light small";
+			wrapper.className = "bright light small";
 			return wrapper;
 		}
 
 		if (this.config.location === "") {
 			wrapper.innerHTML = "Please set the openweather <i>location</i> in the config for module: " + this.name + ".";
-			wrapper.className = "dimmed light small";
+			wrapper.className = "bright light small";
 			return wrapper;
 		}
 
 		if (!this.loaded) {
 			wrapper.innerHTML = this.translate('LOADING');
-			wrapper.className = "dimmed light small";
+			wrapper.className = "bright light small";
 			return wrapper;
 		}
 
@@ -118,7 +118,7 @@ Module.register("currentweather",{
 		small.className = "normal medium";
 
 		var windIcon = document.createElement("span");
-		windIcon.className = "wi wi-strong-wind dimmed";
+		windIcon.className = "wi wi-strong-wind bright";
 		small.appendChild(windIcon);
 
 		var windSpeed = document.createElement("span");
@@ -135,7 +135,7 @@ Module.register("currentweather",{
 		small.appendChild(spacer);
 
 		var sunriseSunsetIcon = document.createElement("span");
-		sunriseSunsetIcon.className = "wi dimmed " + this.sunriseSunsetIcon;
+		sunriseSunsetIcon.className = "wi bright " + this.sunriseSunsetIcon;
 		small.appendChild(sunriseSunsetIcon);
 
 		var sunriseSunsetTime = document.createElement("span");
@@ -201,7 +201,7 @@ Module.register("currentweather",{
 		var params = "?";
 		if(this.config.locationID !== "") {
 			params += "id=" + this.config.locationID;
-		} else { 
+		} else {
 			params += "q=" + this.config.location;
 		}
 		params += "&units=" + this.config.units;

@@ -5,8 +5,9 @@
   "main": "js/electron.js",
   "scripts": {
     "start": "electron js/electron.js",
+    "build":"grunt style",
     "jscs": "jscs **/**/**/**/*.js",
-    "stylelint": "stylelint css/main.css fonts/roboto.css",
+    "stylelint": "stylelint assets/css/main.min.css fonts/roboto.css",
     "htmlvalidator": "html-validator --file=index.html",
     "test": "snyk test"
   },
@@ -14,12 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/MichMich/MagicMirror.git"
   },
-  "keywords": [
-    "magic mirror",
-    "smart mirror",
-    "mirror UI",
-    "modular"
-  ],
+  "keywords": [],
   "author": "Michael Teeuw",
   "contributors": "https://github.com/MichMich/MagicMirror/graphs/contributors",
   "license": "MIT",
@@ -28,30 +24,48 @@
   },
   "homepage": "https://github.com/MichMich/MagicMirror#readme",
   "devDependencies": {
-    "autoprefix": "^0.1.4",
-    "copy": "^0.2.3",
-    "cssmin": "^0.4.3",
+    "autoprefixer": "^6.3.7",
     "electron-prebuilt": "latest",
-    "grunt": "^1.0.1",
+    "grunt": "latest",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-htmlmin": "^1.5.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-less": "^1.3.0",
+    "grunt-contrib-qunit": "^1.2.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
     "grunt-eslint": "latest",
     "grunt-postcss": "latest",
-    "htmlmin": "0.0.6",
-    "imagemin": "^5.2.2",
+    "grunt-serve": "latest",
+    "grunt-uncss": "latest",
+    "htmlmin": "latest",
+    "imagemin": "latest",
+    "less-plugin-autoprefix": "^1.5.1",
+    "load-grunt-tasks": "^3.5.0",
+    "modernizr": "latest",
     "postcss-reporter": "latest",
+    "request": "^2.73.0",
     "stylelint": "latest",
     "stylelint-config-standard": "latest",
-    "time-grunt": "latest"
+    "svgmin": "^0.1.0",
+    "time-grunt": "latest",
+    "uglify": "^0.1.5"
   },
   "dependencies": {
     "express": "latest",
     "feedme": "latest",
+    "grunt": "latest",
     "iconv-lite": "latest",
     "moment": "latest",
     "request": "latest",
+    "rrule": "latest",
     "snyk": "latest",
     "socket.io": "latest",
     "valid-url": "latest",
-    "walk": "latest",
-    "rrule": "latest"
+    "walk": "latest"
   }
 }

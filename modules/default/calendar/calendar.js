@@ -98,7 +98,7 @@ Module.register("calendar",{
 
 		if (events.length === 0) {
 			wrapper.innerHTML = (this.loaded) ? this.translate("EMPTY") : this.translate("LOADING");
-			wrapper.className = "small dimmed";
+			wrapper.className = "small bright";
 			return wrapper;
 		}
 
@@ -205,7 +205,7 @@ Module.register("calendar",{
 			}
 			//timeWrapper.innerHTML += ' - '+ moment(event.startDate,'x').format('lll');
 			//console.log(event);
-			timeWrapper.className = "time light";
+			timeWrapper.className = "time bright";
 			eventWrapper.appendChild(timeWrapper);
 
 			wrapper.appendChild(eventWrapper);

@@ -17,8 +17,8 @@ var Server = function(config, callback) {
 	server.listen(config.port);
 	app.use("/js", express.static(__dirname));
 	app.use("/config", express.static(path.resolve(__dirname + "/../config")));
-	app.use("/css", express.static(path.resolve(__dirname + "/../css")));
-	app.use("/fonts", express.static(path.resolve(__dirname + "/../fonts")));
+	//app.use("/css", express.static(path.resolve(__dirname + "/../css")));
+	//app.use("/fonts", express.static(path.resolve(__dirname + "/../fonts")));
 	app.use("/modules", express.static(path.resolve(__dirname + "/../modules")));
 	app.use("/vendor", express.static(path.resolve(__dirname + "/../vendor")));
 	app.use("/translations", express.static(path.resolve(__dirname + "/../translations")));

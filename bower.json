@@ -17,7 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "requirejs": "^2.2.0",    
+    "requirejs": "^2.2.0",
     "font-awesome": "^4.6.3",
     "modernizr": "^3.3.1",
     "moment": "momentjs#^2.13.0"
@@ -26,5 +26,7 @@
     "html5-boilerplate": "^5.3.0",
     "animate.css": "^3.5.2",
     "jquery": "^3.0.0",
+    "normalize-css": "normalize.css#^4.2.0",
+    "requirejs": "^2.2.0"
   }
 }
